@@ -1,0 +1,17 @@
+body {
+background-color: burlywood
+}
+
+h1,p {
+font-size: 2em;  
+font-family: 'Raleway', sans-serif;   
+text-shadow: 1px 1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0
+}
+
+.jumbotron{
+    text-align: center;
+    background-image: url("firewatch.jpg");
+    background-position: 5%;
+    color: rgb(57, 96, 162);
+    opacity: 0.9;
+}

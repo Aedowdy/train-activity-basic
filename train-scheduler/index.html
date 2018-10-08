@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Train Scheduler</title>
+  <meta name="description" content="Train Time Site">
+
+	<!-- jQuery CDN by Google -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap Component -->
+	<!-- Latest compiled and minified CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Bootstrap Component -->
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+
+	<!-- Link to Stylesheet -->
+  	<link rel="stylesheet" href="style.css">	
+
+</head>
+<body>
+
+
+
+<!-- 	Jumbotron Container  -->
+	<div class="jumbotron">
+	  <h1>Midnight Train</h1>
+	  <p>A Comprehensive Directory of Train Times</p>
+	</div>
+
+<!-- Main container for bootstrap -->
+<div class="container">
+    <!--  Generated Table -->
+    <div class="row">
+	<div class="col-lg-12">
+	<div class="panel panel-info">
+	<div class="panel-heading">
+		<h3 class="panel-title">Current Train Schedule</h3>
+	</div>
+
+	<div class="panel-body">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+				<th>Train Name</th>
+				<th>Destination</th>
+				<th>Frequency (min)</th>
+				<th>Next Arrival</th>
+				<th>Minutes Away</th>
+				</tr>
+			</thead>
+
+		     <tbody class="trainInformation">
+		     </tbody>
+		</table>
+	</div>
+	</div>
+	</div>	
+	</div> <!-- <div class="row"> -->
+
+
+	<!-- Form Section -->
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Add Train</h3>
+				</div>
+				<div class="panel-body">
+					<form>
+						<div class="form-group"> <!-- Input for Train Names  -->
+							<label for="traineName">Train Name</label>
+							<input type="text" class="form-control" id="trainName">
+						</div>
+						<div class="form-group"> <!-- Input for Destinations -->
+							<label for="destination">Destination</label>
+							<input type="text" class="form-control" id="destination">
+						</div>	
+						<div class="form-group"> <!-- First Train Time  -->
+							<label for="firstTrainTime">First Train Time (00:00 - military time)</label>
+							<input type="text" class="form-control" id="firstTrainTime">
+						</div>	
+						<div class="form-group"> <!-- Frequency of Train Arrivals -->
+							<label for="frequency">Frequency (min)</label>
+							<input type="text" class="form-control" id="frequency">
+						</div>	
+						<button id="submit" type="submit" class="btn btn-info">Submit</button>
+					</form>
+
+				</div>
+			</div>
+		</div>	
+	</div> <!-- <div class="row"> -->
+
+</div> <!--  <div class="container"> -->
+
+	<!-- Link to firebase data  -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+	<!-- Link to JavaScript File -->
+ 	<script src="script.js"></script>
+
+<script>
+</script>
+
+</body>
+</html>
